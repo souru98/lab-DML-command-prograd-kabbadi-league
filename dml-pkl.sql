@@ -97,9 +97,10 @@ SELECT * FROM outcome;
 
 --12. Insert into game
 
+
 INSERT INTO game
-(id,game_id,team_id_1,team_id_2,venue_id,outcome_id,referee_id_1,referee_id_2,first_innings_id,second_innings_id)
-VALUES(12,2020-AUG-03,7,6,21,9,1,2,33,7);
+(id,game_date,team_id_1,team_id_2,venue_id,outcome_id,referee_id_1,referee_id_2,first_innings_id,second_innings_id)
+VALUES(12,TO_DATE('12/01/2016', 'DD/MM/YYYY'),7,6,21,9,1,2,33,7);
 
 
 SELECT * FROM game;
